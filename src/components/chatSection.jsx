@@ -21,7 +21,7 @@ const data = [
 
 export default function AnalyticsChart() {
   return (
-    <div className="w-[614px] h-[242px] mt-10">
+    <div className="w-[614px] h-[242px] mt-10 ml-0">
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart data={data}>
           {/* Gradient */}
@@ -32,8 +32,8 @@ export default function AnalyticsChart() {
             </linearGradient>
           </defs>
 
-          <XAxis dataKey="month" />
-          <YAxis />
+          <XAxis dataKey="month" axisLine={false} tickLine={false} />
+          <YAxis axisLine={false} tickLine={false} />
           <Tooltip />
 
           {/* Area (main line with fill) */}

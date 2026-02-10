@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import arrowIcon from "../assets/ArrowLineDown2.svg";
 import heroIcon from "../assets/heroIcon.svg";
 import AnalyticsChart from "../components/chatSection.jsx";
-
+import TrafficByDevice from "../components/barchat.jsx";
+import TrafficByLocation from "../components/taficByLocation.jsx";
 const heroSection = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -13,13 +14,15 @@ const heroSection = () => {
   return (
     <div className=" w-[948px] h-auto">
       <div className="flex items-center justify-between">
-        <h1 className="text-black font-semibold ">Overview</h1>
-        <div className="items-center justify-center flex gap-2">
-          <p>Today</p>
+        <h1 className="text-black font-semibold ml-8">Overview</h1>
+        <div className="items-center justify-center flex gap-2  mr-8">
+          <p className="text-black">Today</p>
           <button
             onClick={handleArrowClick}
             className="transition-transform duration-300"
-            style={{ transform: dropdownOpen ? "rotate(180deg)" : "rotate(0deg)" }}
+            style={{
+              transform: dropdownOpen ? "rotate(180deg)" : "rotate(0deg)",
+            }}
           >
             <img src={arrowIcon} alt="signIcon" className="mt-1" />
           </button>
@@ -27,8 +30,8 @@ const heroSection = () => {
       </div>
 
       <div>
-        <div className="grid grid-cols-4  gap-[28px] mt-6  ">
-          <div className="bg-[#EDEEFC]    rounded-lg ">
+        <div className="grid grid-cols-4   mt-6  ">
+          <div className="bg-[#EDEEFC]  w-[202px] h-[112px] rounded-lg ml-[28px]">
             <div className="mx-6 mt-6">
               <p>Views</p>
             </div>
@@ -39,7 +42,7 @@ const heroSection = () => {
             </div>
           </div>
 
-          <div className="bg-[#E6F1FD]    rounded-lg">
+          <div className="bg-[#E6F1FD]  w-[202px] h-[112px]  rounded-lg  ml-[22px]">
             <div className="mx-6 mt-6">
               <p>Visits</p>
             </div>
@@ -50,7 +53,7 @@ const heroSection = () => {
             </div>
           </div>
 
-          <div className="bg-[#EDEEFC]    rounded-lg">
+          <div className="bg-[#EDEEFC]  w-[202px] h-[112px] rounded-lg ml-[16px]">
             <div className="mx-6 mt-6">
               <p>New users</p>
             </div>
@@ -60,7 +63,7 @@ const heroSection = () => {
               <img src={heroIcon} alt="iconHero" />
             </div>
           </div>
-          <div className="bg-[#E6F1FD]   rounded-lg">
+          <div className="bg-[#E6F1FD]  w-[202px] h-[112px] rounded-lg  ml-[10px] ">
             <div className="mx-6 mt-6">
               <p>Active Users</p>
             </div>
@@ -76,7 +79,9 @@ const heroSection = () => {
             <div className="w-[614px] h-[20px] mt-[24px] mx-[24px]  rounded-lg ">
               <div className="flex ">
                 <div className="flex items-center justify-center gap-6 text-gray-600">
-                  <button className="font-semibold text-black">Total Users</button>
+                  <button className="font-semibold text-black">
+                    Total Users
+                  </button>
                   <button>Total Projects</button>
                   <button>Operating Status</button>
                   <div>
@@ -90,17 +95,14 @@ const heroSection = () => {
                         Last year
                       </button>
                     </div>
-                   
                   </div>
-                 
-                  
                 </div>
-                
               </div>
-                <div><AnalyticsChart /></div>
+              <div>
+                <AnalyticsChart />
+              </div>
             </div>
           </div>
-
 
           <div className="w-[202px] h-[330px] bg-[#F9F9FA] rounded-lg ">
             <div className="flex items-center justify-start mt-[24px] text-black font-semibold ml-6">
@@ -168,22 +170,28 @@ const heroSection = () => {
                   </div>
                 </div>
               </div>
-
-
-             
             </div>
-             <div>
-                <button className="w-full h-8 bg-black text-white rounded-lg mt-6 flux">
-                  View All Sources
-                </button>
-              </div>
-
           </div>
-          
         </div>
-
-      
       </div>
+
+      <div className="flex items-center justify-start">
+        <div className="flex mt-8 ml-0 gap-4">
+          <div className=" ">
+            <TrafficByDevice />
+          </div>
+
+          <div className="w-[432px] h-[280px] ">
+            <TrafficByLocation />
+          </div>
+        </div>
+       
+      </div>
+       <div className="w-[892px] h-[0px] mt-8 ml-12 text-black font-semibold bg-[#F9F9FA]">
+          <p>
+            Marketing & SEO
+          </p>
+        </div>
     </div>
   );
 };

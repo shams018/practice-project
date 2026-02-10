@@ -12,7 +12,6 @@ function App() {
           <NavBar />
           <HeoSection />
         </div>
-
         <NotiBar />
       </div>
     </>

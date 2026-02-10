@@ -30,7 +30,7 @@ const noteBar = () => {
           <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
           <img src={notiIcon} alt="notification icon" className="ml-2 mt-1" />
           <div>
-            <h1>You fixed a bug.</h1>
+            <p>You fixed a bug.</p>
             <p className="text-xs text-gray-600">Just now</p>
           </div>
           </div>
@@ -38,7 +38,7 @@ const noteBar = () => {
           <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
           <img src={notiIcon1} alt="notification icon" className="ml-2 mt-1" />
           <div>
-            <h1>New user registered.</h1>
+            <p>New user registered.</p>
             <p className="text-xs text-gray-600">59 minutes ago</p>
           </div>
           </div>
@@ -46,7 +46,7 @@ const noteBar = () => {
           <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
           <img src={notiIcon2} alt="notification icon" className="ml-2 mt-1" />
           <div>
-            <h1>You fixed a bug..</h1>
+            <p>You fixed a bug.</p>
             <p className="text-xs text-gray-600">12 hours ago</p>
           </div>
           </div>
@@ -54,7 +54,7 @@ const noteBar = () => {
            <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
           <img src={notiIcon3} alt="notification icon" className="ml-2 mt-1" />
           <div>
-            <h1>Andi Lane subscribed to you</h1>
+            <p>Andi Lane subscribed to you</p>
             <p className="text-xs text-gray-600">Today, 11:59 AM</p>
           </div>
           </div>
@@ -68,14 +68,14 @@ const noteBar = () => {
         <div className="h-[316px] w-[248px] flex flex-col items-start   mx-auto ">
           <div className="w-[248px] h-[36px] flex flex-row items-start  ml-2 mt-5  text-black text-sm ">
 
-              <h1>Activities</h1>
+              <p>Activities</p>
           </div>
 
 
           <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
           <img src={actiIcon} alt="Activities icon" className="ml-2 mt-1" />
           <div>
-            <h1>Changed the style.</h1>
+            <p>Changed the style.</p>
             <p className="text-xs text-gray-600">Just now</p>
           </div>
           </div>
@@ -83,7 +83,7 @@ const noteBar = () => {
           <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
           <img src={actiIcon1} alt="Activities icon" className="ml-2 mt-1" />
           <div>
-            <h1>Released a new version.</h1>
+            <p>Released a new version.</p>
             <p className="text-xs text-gray-600">59 minutes ago</p>
           </div>
           </div>
@@ -91,7 +91,7 @@ const noteBar = () => {
           <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
           <img src={actiIcon2} alt="Activities icon" className="ml-2 mt-1" />
           <div>
-            <h1>Submitted a bug.</h1>
+            <p>Submitted a bug.</p>
             <p className="text-xs text-gray-600">12 hours ago</p>
           </div>
           </div>
@@ -99,7 +99,7 @@ const noteBar = () => {
            <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
           <img src={actiIcon3} alt="Activities icon" className="ml-2 mt-1" />
           <div>
-            <h1>Modified A data in Page X.</h1>
+            <p>Modified A data in Page X.</p>
             <p className="text-xs text-gray-600">Today, 11:59 AM</p>
           </div>
           </div>
@@ -107,7 +107,7 @@ const noteBar = () => {
           <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
           <img src={actiIcon4} alt="Activities icon" className="ml-2 mt-1" />
           <div>
-            <h1>Deleted a page in Project X.</h1>
+            <p>Deleted a page in Project X.</p>
             <p className="text-xs text-gray-600">Feb 2, 2026</p>
           </div>
           </div>
@@ -117,14 +117,14 @@ const noteBar = () => {
            <div className="h-[316px] w-[248px] flex flex-col items-start   mx-auto ">
           <div className="w-[248px] h-[36px] flex flex-row items-start  ml-2 mt-5  text-black text-sm ">
 
-              <h1>Contacts</h1>
+              <p>Contacts</p>
           </div>
 
 
           <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
           <img src={contactIcon} alt="contact icon" className="ml-2 " />
           <div>
-            <h1>Natali Craig</h1>
+            <p>Natali Craig</p>
            
           </div>
           </div>
@@ -132,7 +132,7 @@ const noteBar = () => {
           <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
           <img src={contactIcon1} alt="contact icon" className="ml-2 " />
           <div>
-            <h1>Drew Cano</h1>
+            <p>Drew Cano</p>
            
           </div>
           </div>
@@ -140,7 +140,7 @@ const noteBar = () => {
           <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
           <img src={contactIcon2} alt="contact icon" className="ml-2 " />
           <div>
-            <h1>Andi Lane</h1>
+            <p>Andi Lane</p>
            
           </div>
           </div>
@@ -148,7 +148,7 @@ const noteBar = () => {
            <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
           <img src={contactIcon3} alt="contact icon" className="ml-2 " />
           <div>
-            <h1>Koray Okumus</h1>
+            <p>Koray Okumus</p>
           
           </div>
           </div>
@@ -156,7 +156,7 @@ const noteBar = () => {
           <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
           <img src={contactIcon4} alt="contact icon" className="ml-2 " />
           <div>
-            <h1>Kate Morrison</h1>
+            <p>Kate Morrison</p>
           
           </div>
           </div>
