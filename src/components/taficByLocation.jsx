@@ -24,7 +24,7 @@ const TrafficByLocation = ({ chartData = data }) => {
   }
 
   return (
-    <div className="w-full mt- w-[432px] h-[280px] bg-[#F9F9FA]">
+    <div className="w-full mt- w-[432px] h-[280px] bg-[#F9F9FA] rounded-lg">
       {/* Title */}
       <h2 className="text-lg font-semibold mt-4">
         Traffic by Location
@@ -32,7 +32,7 @@ const TrafficByLocation = ({ chartData = data }) => {
 
       <div className="flex items-center gap-6 mt-10  ">
         {/* Donut Chart */}
-        <div className="w-[120px] h-[120px]">
+        <div className="w-[120px] h-[120px]" style={{ minHeight: '120px', minWidth: '120px' }}>
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
               <Pie

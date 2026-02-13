@@ -63,7 +63,7 @@ const heroSection = () => {
               <img src={heroIcon} alt="iconHero" />
             </div>
           </div>
-          <div className="bg-[#E6F1FD]  w-[202px] h-[112px] rounded-lg  ml-[10px] ">
+          <div className="bg-[#E6F1FD]  w-[202px] h-[112px] rounded-lg  ml-[1px] ">
             <div className="mx-6 mt-6">
               <p>Active Users</p>
             </div>
@@ -77,7 +77,7 @@ const heroSection = () => {
         <div className="flex  gap-[28px] mt-[28px] ">
           <div className="w-[662px] h-[330px] bg-[#F9F9FA] rounded-lg ">
             <div className="w-[614px] h-[20px] mt-[24px] mx-[24px]  rounded-lg ">
-              <div className="flex ">
+              <div className="flex ml-6 ">
                 <div className="flex items-center justify-center gap-6 text-gray-600">
                   <button className="font-semibold text-black">
                     Total Users
@@ -176,7 +176,7 @@ const heroSection = () => {
       </div>
 
       <div className="flex items-center justify-start">
-        <div className="flex mt-8 ml-0 gap-4">
+        <div className="flex mt-8 ml-0 gap-6">
           <div className=" ">
             <TrafficByDevice />
           </div>
@@ -187,7 +187,9 @@ const heroSection = () => {
         </div>
        
       </div>
-       <div className="w-[892px] h-[0px] mt-8 ml-12 text-black font-semibold bg-[#F9F9FA]">
+<div className="w-[892px] h-[0px] mt-8 ml-12 text-black font-semibold bg-[#F9F9FA] rounded-lg
+    shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]">
+
           <p>
             Marketing & SEO
           </p>

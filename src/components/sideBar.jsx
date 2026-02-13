@@ -26,13 +26,13 @@ const sideBar = () => {
 
     
     <div className="flex justify-start">
-      <div className="h-[1024px] w-[212px] rounded-tl-3xl rounded-bl-3xl bg-gray-50 shadow-lg">
+      <div className="h-[1024px] w-[212px] rounded-tl-3xl rounded-bl-3xl  shadow-lg">
         <div className=" h-[180px] w-[172px] flex flex-col items-start  bg-white mx-auto    ">
           <div className="w-[180px] h-[28px] flex flex-row  ml-2 mt-3 gap-2">
             <img src={logoicon} alt="mainlogicon" />
             <h1 className="text-black font-bold text-lg ">ByeWind</h1>
           </div>
-          <div className="w-[180px] h-[28px] flex flex-row   mt-3 gap-5  ">
+          <div className="w-[180px] h-[28px] flex flex-row   mt-6 gap-5  ">
             <button className="w-[61px] h-[20px] text-gray-500 ml-2">
               Favorites
             </button>
@@ -183,7 +183,7 @@ const sideBar = () => {
               </div>
             )}
             
-              <div className="w-[180px] h-[36px] flex flex-row mt-60 ml-8   ">
+              <div className="w-[180px] h-[36px] flex flex-row mt-80 ml-8   ">
                 <div className="w-[75px] h-[20px] flex items-center justify-center mt-3 - ">
                     <button ><img src={snowUi} alt="plus icon" className="ml-2 w-[20px] h-[20px]" /></button>
               <img src={unionTxt} alt="dashboard icon" className="ml-3" />

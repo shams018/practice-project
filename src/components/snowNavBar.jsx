@@ -8,7 +8,7 @@ import icon from '../assets/searchIcon.svg'
 import textIcon from '../assets/Text.png'
 
 
-const navBar = () => {
+const snowNavBar = () => {
   const [searchTerm, setSearchTerm] = useState('')
 
   const handleSearchChange = (e) => setSearchTerm(e.target.value)
@@ -19,7 +19,7 @@ const navBar = () => {
   }
 
   return (
-   <div className="w-[948px] h-[68px]  mx-auto flex  items-center justify-between px-4 shadow-sm ">     
+   <div className=" w-full lg:w-[1180px]  h-auto lg:h-[40px]  mx-auto flex  items-center justify-between  mt-4">     
     {/* left side div */}
 
 
@@ -34,7 +34,7 @@ const navBar = () => {
       Dashboard
     </button>
     <button className="px-4 py-1  text-black rounded hover:bg-gray-200 text-sm font-Poppins">
-      Default
+     Overviw
     </button>
 
      
@@ -68,13 +68,11 @@ const navBar = () => {
         <button>
           <img src={icon5} alt="Icon 5" className="w-7 h-7  mr-5 " />
         </button>
-        <button>
-          <img src={icon1} alt="Icon 2" className="w-7 h-7 mr-5 " />
-        </button>
+        
       </div>
 
 </div>
   )
 }
 
-export default navBar;
+export default snowNavBar;

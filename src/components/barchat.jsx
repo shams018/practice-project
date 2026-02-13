@@ -19,12 +19,12 @@ const data = [
 
 export default function TrafficByDevice() {
   return (
-    <div className="bg-[#F9F9FA] w-[432px] h-[280px] flex flex-col p-4 box-border">
+    <div className="bg-[#F9F9FA] w-[432px] h-[280px] flex flex-col p-4 box-border ">
       <h3 className="text-lg font-semibold mb-2 ml-7 ">
         Traffic by Device
       </h3>
 
-      <div className="flex-1">
+      <div className="flex-1" style={{ minHeight: 0 }}>
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={data}>
           <XAxis

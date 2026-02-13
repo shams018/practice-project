@@ -16,9 +16,9 @@ import contactIcon4 from "../assets/contactIcon4.svg";
 
 const noteBar = () => {
   return (
-    <div className="flex justify-end">
+    <div className="flex justify-end position-fixed">
       <div
-        className="h-[1024px] w-[280px] rounded-tr-3xl rounded-br-3xl bg-gray-50 shadow-lg"
+        className="h-[1024px] w-[280px] rounded-tr-3xl rounded-br-3xl  shadow-lg"
       >
         <div className="h-[260px] w-[248px] flex flex-col items-start   mx-auto ">
           <div className="w-[248px] h-[36px] flex flex-row items-start  ml-2 mt-5  text-black text-sm ">

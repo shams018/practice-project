@@ -21,7 +21,7 @@ const data = [
 
 export default function AnalyticsChart() {
   return (
-    <div className="w-[614px] h-[242px] mt-10 ml-0">
+    <div className="w-[614px] h-[242px] mt-10 ml-0" style={{ minHeight: '242px' }}>
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart data={data}>
           {/* Gradient */}
