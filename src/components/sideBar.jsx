@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logoicon from "../assets/icon.svg";
+import logoicon from "../assets/Icon.svg";
 import dashicon from "../assets/icondash1.svg";
 import VectorIcon from "../assets/Vecto.svg";
 import dashicon2 from "../assets/icondash2.svg";
