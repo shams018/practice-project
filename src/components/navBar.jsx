@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import icon1 from '../assets/Navicon.svg'
-
-import star from '../assets/star.svg'
+import icon6 from '../assets/Icon5.svg'
 import icon3 from '../assets/Navicon2.svg'
 import icon4 from '../assets/Navicon3.svg'
 import icon5 from '../assets/bell.svg'
@@ -29,7 +28,7 @@ const navBar = () => {
           <img src={icon1} alt="Icon 2" className="w-5 h-5 mr-5 " />
     </button>
     <button>
-          <img src={star} alt="Icon 1" className="w-5 h-5  mr-5 " />
+          <img src={icon6 } alt="Icon 1" className="w-5 h-5  mr-5 " />
     </button>
   <button className="px-4 py-1 text-black rounded hover:bg-gray-200 text-sm font-Poppins">
       Dashboard

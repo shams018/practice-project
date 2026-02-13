@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import icon1 from '../assets/Navicon.svg'
-import icon2 from '../assets/star.svg'
+import icon2 from '../assets/Icon5.svg'
 import icon3 from '../assets/Navicon2.svg'
 import icon4 from '../assets/Navicon3.svg'
 import icon5 from '../assets/bell.svg'
