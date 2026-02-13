@@ -38,6 +38,9 @@ const Snow = () => {
 
             {/* just for commit message on git account */}
 
+              {/* just for commit message on git account */}
+                {/* just for commit message on git account */}
+
         </div>
       </div>
     </div>
