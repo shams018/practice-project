@@ -34,6 +34,10 @@ const Snow = () => {
         <SnowNavBar toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
         <div className="overflow-y-auto h-[calc(100vh-80px)] scrollbar-hide">
           <SnowMainContant />
+
+
+            {/* just for commit message on git account */}
+
         </div>
       </div>
     </div>
