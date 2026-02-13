@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import logoicon from "../assets/Icon.svg";
-import dashicon from "../assets/icondash1.svg";
+import dashicon from "../assets/Icondash1.svg";
 import VectorIcon from "../assets/Vecto.svg";
-import dashicon2 from "../assets/icondash2.svg";
-import dashicon3 from "../assets/icondash3.svg";
-import pageicon from "../assets/pageicon.svg";
-import pageicon1 from "../assets/pageicon1.svg";
-import pageicon2 from "../assets/pageicon2.svg";
-import pageicon3 from "../assets/pageicon3.svg";
-import pageicon4 from "../assets/pageicon4.svg";
+import dashicon2 from "../assets/Icondash2.svg";
+import dashicon3 from "../assets/Icondash3.svg";
+import pageicon from "../assets/Pageicon.svg";
+import pageicon1 from "../assets/Pageicon1.svg";
+import pageicon2 from "../assets/Pageicon2.svg";
+import pageicon3 from "../assets/Pageicon3.svg";
+import pageicon4 from "../assets/Pageicon4.svg";
 import arrowline from "../assets/ArrowLineRight-s.svg";
-import snowUi from "../assets/snowUI.svg";
+import snowUi from "../assets/SnowUI.svg";
 import unionTxt from "../assets/Union.svg";
 import unionT from "../assets/Union1.svg";
 
