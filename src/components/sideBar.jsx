@@ -59,29 +59,29 @@ const sideBar = () => {
             <button className="w-[61px] h-[20px] ml-2">Projects</button>
           </div>
 
-          <div className="w-[172px] flex flex-col items-start bg-white mx-auto mt-8 overflow-visible">
-            <div className="w-[180px] h-[28px] flex flex-row  ml-2 mt-3 gap-2">
-              <h1 className="text-gray-700   text-lg ml-2">Dashbaord</h1>
+          <div className="w-[172px] flex flex-col items-start bg-white mx-auto mt-8 overflow-visible ">
+            <div className="w-[180px] h-[28px] flex flex-row  ml-2 mt-3 gap-2 ">
+              <p className="text-gray-700   text-lg ml-2">Dashbaord</p>
             </div>
-            <div className="w-[180px] h-[28px] flex flex-row   mt-3 gap-2 bg-gray-200  rounded-lg ">
+            <div className="w-[180px] h-[28px] flex flex-row   mt-3 gap-2 cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200  ">
               <img src={dashicon} alt="dashboard icon" className="ml-8" />
-              <button className="w-[61px] h-[20px] text-gray-500 ml-2">
+              <button className="w-[61px] h-[20px]  ml-2">
                 Overview
               </button>
             </div>
               
 
             <div 
-              className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer"
+              className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200"
               onClick={() => setEcommerceOpen(!ecommerceOpen)}
             >
               <img 
                 src={arrowline} 
                 alt="dashboard icon" 
-                className={`ml-2 transition-transform ${ecommerceOpen ? 'rotate-90' : ''}`} 
+                className={`ml-2  transition-transform ${ecommerceOpen ? 'rotate-90' : ''} `} 
               />
               <img src={dashicon2} alt="dashboard icon" className="ml-2" />
-              <button className="w-[61px] h-[20px]">eCommerce</button>
+              <button className="w-[61px] h-[20px] ">eCommerce</button>
             </div>
             
             {ecommerceOpen && (
@@ -91,7 +91,7 @@ const sideBar = () => {
             )}
 
             <div 
-              className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer"
+              className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200"
               onClick={() => setProjectsOpen(!projectsOpen)}
             >
               <img 
@@ -114,7 +114,7 @@ const sideBar = () => {
             <div className="w-[180px] h-auto flex flex-row  ml-2 mt-3 gap-2">
               <h1 className="text-gray-700  text-lg ml-2">Pages</h1>
             </div>
-            <div className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer" onClick={() => setUserprofileOpen(!userprofileOpen)}>
+            <div className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200" onClick={() => setUserprofileOpen(!userprofileOpen)}>
               <img src={arrowline} alt="dashboard icon" className={`ml-2 transition-transform ${userprofileOpen ? 'rotate-90' : ''}`} />
               <img src={pageicon} alt="dashboard icon" className="ml-2" />
               <button className="w-[61px] h-[20px]">UserProfile</button>
@@ -140,7 +140,7 @@ const sideBar = () => {
               </div>
             )}
 
-            <div className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer" onClick={() => setAccountOpen(!accountOpen)}>
+            <div className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200" onClick={() => setAccountOpen(!accountOpen)}>
               <img src={arrowline} alt="dashboard icon" className={`ml-2 transition-transform ${accountOpen ? 'rotate-90' : ''}`} />
               <img src={pageicon1} alt="dashboard icon" className="ml-2" />
               <button className="w-[61px] h-[20px]">Account</button>
@@ -151,7 +151,7 @@ const sideBar = () => {
               </div>
             )}
             
-            <div className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer" onClick={() => setCorporateOpen(!coporateOpen)}>
+            <div className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200" onClick={() => setCorporateOpen(!coporateOpen)}>
               <img src={arrowline} alt="dashboard icon" className={`ml-2 transition-transform ${coporateOpen ? 'rotate-90' : ''}`} />
               <img src={pageicon2} alt="dashboard icon" className="ml-2" />
               <button className="w-[61px] h-[20px]">Corporate</button>
@@ -162,7 +162,7 @@ const sideBar = () => {
               </div>
             )}
 
-            <div className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer" onClick={() => setBlogOpen(!blogOpen)}>
+            <div className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200" onClick={() => setBlogOpen(!blogOpen)}>
               <img src={arrowline} alt="dashboard icon" className={`ml-2 transition-transform ${blogOpen ? 'rotate-90' : ''}`} />
               <img src={pageicon3} alt="dashboard icon" className="ml-2" />
               <button className="w-[61px] h-[20px]">Blog</button>
@@ -173,7 +173,7 @@ const sideBar = () => {
               </div>
             )}
 
-            <div className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer" onClick={() => setSocialOpen(!socialOpen)}>
+            <div className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200" onClick={() => setSocialOpen(!socialOpen)}>
               <img src={arrowline} alt="dashboard icon" className={`ml-2 transition-transform ${socialOpen ? 'rotate-90' : ''}`} />
               <img src={pageicon4} alt="dashboard icon" className="ml-2" />
               <button className="w-[61px] h-[20px]">Social</button>

@@ -13,10 +13,12 @@ import contactIcon2 from "../assets/contactIcon2.svg";
 import contactIcon3 from "../assets/contactIcon3.svg";
 import contactIcon4 from "../assets/contactIcon4.svg";
 
+
+
 const snowMainContant = () => {
   return (
     <>
-      <div className="grid grid-cols-4  mt-6  ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4  mt-6  ">
         <div className="bg-[#007AFF]  w-full lg:w-[285px]  h-auto lg:h-[100px]   rounded-3xl text-white gap-2">
           <div className="mx-6 mt-6 flex justify-between items-center gap-2">
             <p>Views</p>
@@ -103,12 +105,10 @@ const snowMainContant = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-4 mt-4 ml-4">
-
-  <div className="w-full lg:w-[586px] h-auto lg:h-[272px] bg-white rounded-xl">
-    
-    <div className="w-full lg:w-[538px] h-[40px] mx-4 my-4 flex items-center justify-between">
+        <div className="w-full lg:w-[586px] h-auto lg:h-[272px] bg-white rounded-xl">
+          <div className="w-full lg:w-[538px] h-[40px] mx-4 my-4 flex items-center justify-between">
             <div className="flex items-center justify-between gap-6 ">
-              <button className="font-semibold text-[#00C7BE]">
+              <button className="font-semibold text-[#00C7BE]  hover:scale-110 active:scale-95 transition-all duration-100">
                 Device Traffic
               </button>
             </div>
@@ -125,7 +125,7 @@ const snowMainContant = () => {
         <div className="w-full lg:w-[586px] h-auto lg:h-[272px] bg-white rounded-xl">
           <div className="w-[538px] h-[40px] mx-4 my-4 flex items-center justify-between ">
             <div className="flex items-center justify-between gap-6 ">
-              <button className="font-semibold text-[#34C759]">
+              <button className="font-semibold text-[#34C759]  hover:scale-110 active:scale-95 transition-all duration-100">
                 Location Traffic
               </button>
             </div>
@@ -144,7 +144,7 @@ const snowMainContant = () => {
       <div className=" w-full lg:w-[1188px] h-auto lg:h-[344px] bg-white mx-4 mt-6 rounded-lg border-transparent border-2 ">
         <div className=" w-full lg:w-[1140px] h-auto lg:h-[40px] mx-4 my-4 flex items-center justify-between ">
           <div className="flex items-center justify-between gap-6 ">
-            <button className="font-semibold text-[#FF3B30]">
+            <button className="font-semibold text-[#FF3B30] hover:scale-110 active:scale-95 transition-all duration-100">
               Product Traffic
             </button>
           </div>
@@ -175,7 +175,7 @@ const snowMainContant = () => {
       <div className=" w-full lg:w-[1188px] h-auto lg:h-[424px] bg-white mx-4 mt-6 rounded-lg border-transparent border-2 ">
         <div className=" w-full lg:w-[1140px] h-auto lg:h-[40px] mx-4 mt-4 flex items-center justify-between ">
           <div className="flex items-center justify-between gap-6 ">
-            <button className="font-semibold text-[#00C7BE]">Projects</button>
+            <button className="font-semibold text-[#00C7BE]  hover:scale-110 active:scale-95 transition-all duration-100">Projects</button>
           </div>
 
           <div className="flex items-center justify-between gap-6 ">
@@ -185,160 +185,149 @@ const snowMainContant = () => {
           </div>
         </div>
         <div className="  w-full lg:w-[1140px] h-auto lg:h-[320px] mx-4  flex items-center justify-center grid grid-cols-4 ">
-         <div className="w-[336.33px] h-[320px] p-4  flex flex-col ">
-        <p className="text-sm text-[#00000066] ml-2 mb-5">Manager</p>
+          <div className="w-[336.33px] h-[320px] p-4  flex flex-col ">
+            <p className="text-sm text-[#00000066] ml-2 mb-5">Manager</p>
+
+            <div className="flex flex-col gap-1">
+              <div className="flex items-center gap-3 h-[52px]">
+                <img src={contactIcon} alt="contact icon" className="ml-2" />
+                <p className="text-black text-sm">Natali Craig</p>
+              </div>
+
+              <div className="flex items-center gap-3 h-[52px]">
+                <img src={contactIcon1} alt="contact icon" className="ml-2" />
+                <p className="text-black text-sm">Drew Cano</p>
+              </div>
+
+              <div className="flex items-center gap-3 h-[52px]">
+                <img src={contactIcon2} alt="contact icon" className="ml-2" />
+                <p className="text-black text-sm">Andi Lane</p>
+              </div>
+
+              <div className="flex items-center gap-3 h-[52px]">
+                <img src={contactIcon3} alt="contact icon" className="ml-2" />
+                <p className="text-black text-sm">Koray Okumus</p>
+              </div>
+
+              <div className="flex items-center gap-3 h-[52px]">
+                <img src={contactIcon4} alt="contact icon" className="ml-2" />
+                <p className="text-black text-sm">Kate Morrison</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-[336.33px] h-[320px] p-4  flex flex-col ml-15">
+            <p className="text-sm text-[#00000066] mb-5 ">Date</p>
+
+            <div className="flex flex-col gap-1 ">
+              <div className="flex items-center gap-3 h-[52px]">
+                <p className="text-black text-sm">Jun 24, 2026</p>
+              </div>
+
+              <div className="flex items-center gap-3 h-[52px]">
+                <p className="text-black text-sm">Mar 10, 2026</p>
+              </div>
+
+              <div className="flex items-center gap-3 h-[52px]">
+                <p className="text-black text-sm">Nov 10, 2026</p>
+              </div>
+
+              <div className="flex items-center gap-3 h-[52px]">
+                <p className="text-black text-sm">Dec 10, 2026</p>
+              </div>
+
+              <div className="flex items-center gap-3 h-[52px]">
+                <p className="text-black text-sm">July 10, 2026</p>
+              </div>
+            </div>
+          </div>
+
+          <div className=" w-full lg:w-[336.33px] h-auto lg:h-[320px] p-4  flex flex-col ml-20">
+            <p className="text-sm text-[#00000066] mb-4 ">Amount</p>
+
+            <div className="flex flex-col gap-1 ">
+              <div className="flex items-center gap-3 h-[52px]">
+                <p className="text-black text-sm">$942.00</p>
+              </div>
+
+              <div className="flex items-center gap-3 h-[52px]">
+                <p className="text-black text-sm">$881.00</p>
+              </div>
+
+              <div className="flex items-center gap-3 h-[52px]">
+                <p className="text-black text-sm">$409.00</p>
+              </div>
+
+              <div className="flex items-center gap-3 h-[52px]">
+                <p className="text-black text-sm">$953.00</p>
+              </div>
+
+              <div className="flex items-center gap-3 h-[52px]">
+                <p className="text-black text-sm">$907.00</p>
+              </div>
+            </div>
+          </div>
+
+{/* Column 4 - Status */}
+<div className="flex flex-col">
+  <p className="text-sm text-[#00000066]  ">Status</p>
 
   <div className="flex flex-col gap-1">
-    <div className="flex items-center gap-3 h-[52px]">
-      <img src={contactIcon} alt="contact icon" className="ml-2" />
-      <p className="text-black text-sm">Natali Craig</p>
+    <div className="flex items-center gap-3  h-[52px]">
+      <button className="h-[28px] bg-[#D29BF0] rounded-2xl text-[#AF52DE] text-semibold px-4 mt-8">
+        In Progress
+      </button>
     </div>
 
     <div className="flex items-center gap-3 h-[52px]">
-      <img src={contactIcon1} alt="contact icon" className="ml-2" />
-      <p className="text-black text-sm">Drew Cano</p>
+      <button className="h-[28px] bg-[#A3F2B0] rounded-2xl text-[#34C759] text-semibold px-4 mt-7">
+        Complete
+      </button>
     </div>
 
     <div className="flex items-center gap-3 h-[52px]">
-      <img src={contactIcon2} alt="contact icon" className="ml-2" />
-      <p className="text-black text-sm">Andi Lane</p>
+      <button className="h-[28px] bg-[#80BFFF] rounded-2xl text-[#007AFF] text-semibold px-4 mt-7">
+        Pending
+      </button>
     </div>
 
     <div className="flex items-center gap-3 h-[52px]">
-      <img src={contactIcon3} alt="contact icon" className="ml-2" />
-      <p className="text-black text-sm">Koray Okumus</p>
+      <button className="h-[28px] bg-[#FFE680] rounded-2xl text-[#FFCC00] text-semibold px-4 mt-7">
+        Approved
+      </button>
     </div>
 
     <div className="flex items-center gap-3 h-[52px]">
-      <img src={contactIcon4} alt="contact icon" className="ml-2" />
-      <p className="text-black text-sm">Kate Morrison</p>
-    </div>
-  </div>
-</div>
-
-         <div className="w-[336.33px] h-[320px] p-4  flex flex-col ml-15">
-        <p className="text-sm text-[#00000066] mb-5 ">Date</p>
-
-  <div className="flex flex-col gap-1 ">
-    <div className="flex items-center gap-3 h-[52px]">
-     
-      <p className="text-black text-sm">Jun 24, 2026</p>
-    </div>
-
-    <div className="flex items-center gap-3 h-[52px]">
-      
-      <p className="text-black text-sm">Mar 10, 2026</p>
-    </div>
-
-    <div className="flex items-center gap-3 h-[52px]">
-     
-      <p className="text-black text-sm">Nov 10, 2026</p>
-    </div>
-
-    <div className="flex items-center gap-3 h-[52px]">
-     
-      <p className="text-black text-sm">Dec 10, 2026</p>
-    </div>
-
-    <div className="flex items-center gap-3 h-[52px]">
-      
-      <p className="text-black text-sm">July 10, 2026</p>
-    </div>
-  </div>
-</div>
-
-          
-         <div className=" w-full lg:w-[336.33px] h-auto lg:h-[320px] p-4  flex flex-col ml-20">
-        <p className="text-sm text-[#00000066] mb-5 ">Amount</p>
-
-  <div className="flex flex-col gap-1 ">
-    <div className="flex items-center gap-3 h-[52px]">
-     
-      <p className="text-black text-sm">$942.00</p>
-    </div>
-
-    <div className="flex items-center gap-3 h-[52px]">
-      
-      <p className="text-black text-sm">$881.00</p>
-    </div>
-
-    <div className="flex items-center gap-3 h-[52px]">
-     
-      <p className="text-black text-sm">$409.00</p>
-    </div>
-
-    <div className="flex items-center gap-3 h-[52px]">
-     
-      <p className="text-black text-sm">$953.00</p>
-    </div>
-
-    <div className="flex items-center gap-3 h-[52px]">
-      
-      <p className="text-black text-sm">$907.00</p>
+      <button className="h-[28px] bg-[#00000066] rounded-2xl text-[#00000066] text-semibold px-4 mt-7">
+        Rejected
+      </button>
     </div>
   </div>
 </div>
 
 
-
-
-
-          <div className="w w-full lg:w-[131px] h-auto lg:h-[320px] p-4  flex flex-col ml-35">
-        <p className="text-sm text-[#00000066] mb-5">Status</p>
-
-  <div className="flex flex-col gap-1 ">
-    <div className="flex items-center gap-3 h-[52px]">
-     
-    <button className="w-[99px] h-[28px] bg-[#D29BF0] rounded-2xl text-[#AF52DE] text-semibold">In Progress</button>
-    </div>
-
-    <div className="flex items-center gap-3 h-[52px]">
-      
-       <button className="w-[99px] h-[28px] bg-[#A3F2B0] rounded-2xl text-[#34C759] text-semibold">Complete</button>
-    </div>
-
-    <div className="flex items-center gap-3 h-[52px]">
-     
-       <button className="w-[99px] h-[28px] bg-[#80BFFF] rounded-2xl text-[#007AFF] text-semibold">Pending</button>
-    </div>
-
-    <div className="flex items-center gap-3 h-[52px]">
-     
-       <button className="w-[99px] h-[28px] bg-[#FFE680] rounded-2xl text-[#FFCC00] text-semibold">Approved</button>
-    </div>
-
-    <div className="flex items-center gap-3 h-[52px]">
-      
-        <button className="w-[99px] h-[28px] bg-[#00000066] rounded-2xl text-[#00000066] text-semibold">Rejected</button>
-    </div>
-  </div>
-</div>
-
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-      <div className=""></div>
-      <div className="w-[1188px] h-[56px] mx-4 mt-6  border-transparent border-2 ">
-        <div className="w-[1140px] h-[40px] mx-4 my-4 flex items-center justify-between ">
-          <div className="flex items-center  ">
-            <button className="text-[#00000066]">© 2026 SnowUI</button>
-          </div>
-
-          <div className="flex items-center justify-between gap-6 mt-0">
-            <button className="text-[#00000066]">About</button>
-            <button className="text-[#00000066]">Support</button>
-            <button className="text-[#00000066]">Contact Us</button>
           </div>
         </div>
-      </div>
+      
+
+     <div className="w-full max-w-[1188px] h-[56px] mx-4 mt-6 border-transparent border-2">
+  <div className="w-full max-w-[1140px] h-[40px] mx-4 my-4 flex items-center justify-between">
+    
+    {/* Left side */}
+    <div className="flex items-center">
+      <button className="text-[#00000066]">© 2026 SnowUI</button>
+    </div>
+
+    {/* Right side */}
+    <div className="flex items-center justify-between gap-6 mt-0">
+      <button className="text-[#00000066] cursor-pointer  hover:scale-110 active:scale-95 transition-all duration-100">About</button>
+      <button className="text-[#00000066] cursor-pointer  hover:scale-110 active:scale-95 transition-all duration-100">Support</button>
+      <button className="text-[#00000066] cursor-pointer  hover:scale-110 active:scale-95 transition-all duration-100">Contact Us</button>
+    </div>
+
+  </div>
+</div>
+
     </>
   );
 };

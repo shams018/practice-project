@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import arrowIcon from "../assets/ArrowLineDown2.svg";
-import heroIcon from "../assets/heroIcon.svg";
+import heroIcon from "../assets/HeroIcon.svg";
 import AnalyticsChart from "../components/chatSection.jsx";
 import TrafficByDevice from "../components/barchat.jsx";
 import TrafficByLocation from "../components/taficByLocation.jsx";
@@ -79,11 +79,11 @@ const heroSection = () => {
             <div className="w-[614px] h-[20px] mt-[24px] mx-[24px]  rounded-lg ">
               <div className="flex ml-6 ">
                 <div className="flex items-center justify-center gap-6 text-gray-600">
-                  <button className="font-semibold text-black">
+                  <button className="text-gray-500 hover:text-black hover:font-semibold transition-colors duration-200">
                     Total Users
                   </button>
-                  <button>Total Projects</button>
-                  <button>Operating Status</button>
+                  <button className="text-gray-500 hover:text-black hover:font-semibold transition-colors duration-200">Total Projects</button>
+                  <button className="text-gray-500 hover:text-black hover:font-semibold transition-colors duration-200">Operating Status</button>
                   <div>
                     <div className="flex items-start justify-center gap-6  ">
                       <button className="flex items-center gap-2">

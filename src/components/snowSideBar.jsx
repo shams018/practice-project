@@ -15,60 +15,75 @@ const snowSideBar = () => {
   return (
     <>
       <div className="w-[180px] h-[36px] flex flex-row    ">
-        <div className="w-[188px] h-[48px] flex items-center ml-6 mt-3 - ">
-          <button>
+        <div className="w-[188px] h-[48px] flex items-center ml-12 mt-3">
+          <button onClick={() => window.location.reload()}>
             <img
               src={snowUi}
               alt="plus icon"
               className="ml-2 w-[32px] h-[32px]"
             />
-          </button >
-          <img src={unionTxt} alt="dashboard icon" className="ml-3 w-[60px] h-[20px]" />
-          <img src={unionT} alt="dashboard icon" className="w-[20px] h-[20px]" />
+          </button>
+
+          <img
+            src={unionTxt}
+            alt="dashboard icon"
+            className="ml-3 w-[60px] h-[20px]"
+          />
+
+          <img
+            src={unionT}
+            alt="dashboard icon"
+            className="w-[20px] h-[20px]"
+          />
         </div>
       </div>
-      <div className="w-[180px] flex flex-col items-start  mx-auto mt-8 p-2">
+      <div className="w-[180px] flex flex-col items-start mx-auto mt-8 p-2">
         {/* Overview */}
-        <div className="flex items-center w-full h-8 gap-2 p-2  bg-gray-200 rounded-lg cursor-pointer">
+        <div className="flex items-center w-full h-8 mt-3 gap-2 p-2 cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200">
           <img src={dashicon} alt="dashboard icon" className="w-5 h-5" />
-          <button className="text-gray-500">Overview</button>
+          <button className="">Overview</button>
         </div>
 
         {/* eCommerce */}
-        <div className="flex items-center w-full h-8 mt-3 gap-2 p-2 cursor-pointer">
+        <div className="flex items-center w-full h-8 mt-3 gap-2 p-2 cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200">
           <img src={dashicon2} alt="dashboard icon" className="w-5 h-5" />
           <button>eCommerce</button>
         </div>
 
         {/* Projects */}
-        <div className="flex items-center w-full h-8 mt-3 gap-2 p-2 cursor-pointer">
+        <div className="flex items-center w-full h-8 mt-3 gap-2 p-2 cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200">
           <img src={dashicon3} alt="dashboard icon" className="w-5 h-5" />
           <button>Projects</button>
         </div>
 
-        <div className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer">
-          <img src={pageicon} alt="dashboard icon" className="ml-2" />
-          <button className="w-[61px] h-[20px]">UserProfile</button>
+        {/* UserProfile */}
+        <div className="flex items-center w-full h-8 mt-3 gap-2 p-2 cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200">
+          <img src={pageicon} alt="dashboard icon" className="" />
+          <button>UserProfile</button>
         </div>
 
-        <div className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer">
-          <img src={pageicon1} alt="dashboard icon" className="ml-2" />
-          <button className="w-[61px] h-[20px]">Account</button>
+        {/* Account */}
+        <div className="flex items-center w-full h-8 mt-3 gap-2 p-2 cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200">
+          <img src={pageicon1} alt="dashboard icon" className="" />
+          <button>Account</button>
         </div>
 
-        <div className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer">
-          <img src={pageicon2} alt="dashboard icon" className="ml-2" />
-          <button className="w-[61px] h-[20px]">Corporate</button>
+        {/* Corporate */}
+        <div className="flex items-center w-full h-8 mt-3 gap-2 p-2 cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200">
+          <img src={pageicon2} alt="dashboard icon" className="" />
+          <button>Corporate</button>
         </div>
 
-        <div className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer">
-          <img src={pageicon3} alt="dashboard icon" className="ml-2" />
-          <button className="w-[61px] h-[20px]">Blog</button>
+        {/* Blog */}
+        <div className="flex items-center w-full h-8 mt-3 gap-2 p-2 cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200">
+          <img src={pageicon3} alt="dashboard icon" className="" />
+          <button>Blog</button>
         </div>
 
-        <div className="w-[180px] h-[28px] flex flex-row mt-3 gap-2 cursor-pointer">
-          <img src={pageicon4} alt="dashboard icon" className="ml-2" />
-          <button className="w-[61px] h-[20px]">Social</button>
+        {/* Social */}
+        <div className="flex items-center w-full h-8 mt-3 gap-2 p-2 cursor-pointer rounded-lg border border-transparent hover:bg-gray-200 hover:border-gray-300 transition-all duration-200">
+          <img src={pageicon4} alt="dashboard icon" className="" />
+          <button>Social</button>
         </div>
       </div>
     </>

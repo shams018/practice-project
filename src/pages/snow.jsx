@@ -5,44 +5,59 @@ import SnowMainContant from "../components/snowMainContant.jsx";
 
 const Snow = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
+  const closeSidebar = () => setSidebarOpen(false);
+  const toggleDarkMode = () => setDarkMode(!darkMode);
 
   return (
-    <div className="flex min-h-screen w-full bg-gray-100">
-
-      {/* Sidebar Overlay (Mobile) */}
+    <div
+      className={`flex min-h-screen w-full transition-colors duration-300 ${
+        darkMode ? "bg-[#0F172A] text-white" : "bg-gray-100 text-black"
+      }`}
+    >
+      
+      {/* Overlay */}
       <div
-        className={`fixed inset-0 bg-black/40 z-30 transition-opacity duration-300 md:hidden ${
-          sidebarOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-        }`}
-        onClick={() => setSidebarOpen(false)}
-      ></div>
+        className={`
+          fixed inset-0 bg-black/40 z-30 md:hidden transition-opacity duration-300
+          ${sidebarOpen ? "opacity-100" : "opacity-0 pointer-events-none"}
+        `}
+        onClick={closeSidebar}
+      />
 
       {/* Sidebar */}
       <div
         className={`
-          fixed z-40 top-0 left-0 h-full w-[220px]  transform transition-transform duration-300
+          fixed z-40 top-0 left-0 h-full
+          w-[200px] sm:w-[220px] lg:w-[240px] xl:w-[260px]
+          transition-transform duration-300
+          ${darkMode ? "bg-[#020817]" : ""}
           md:static md:translate-x-0
           ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-        <SnowSideBar closeSidebar={() => setSidebarOpen(false)} />
+        <SnowSideBar closeSidebar={closeSidebar} darkMode={darkMode} />
       </div>
 
       {/* Main Section */}
-      <div className="flex flex-col flex-1 min-w-0">
-        {/* Pass toggle button to navbar */}
-        <SnowNavBar toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
-        <div className="overflow-y-auto h-[calc(100vh-80px)] scrollbar-hide">
-          <SnowMainContant />
+      <div className="flex flex-col flex-1 min-w-0 w-full">
 
+        {/* Navbar */}
+        <SnowNavBar
+          toggleSidebar={toggleSidebar}
+          toggleDarkMode={toggleDarkMode}
+          darkMode={darkMode}
+        />
 
-            {/* just for commit message on git account */}
-
-              {/* just for commit message on git account */}
-                {/* just for commit message on git account */}
-
+        {/* Main Content */}
+        <div className="flex-1 overflow-y-auto scrollbar-hide px-2 sm:px-4 lg:px-6 xl:px-8">
+          <SnowMainContant darkMode={darkMode} />
         </div>
+
       </div>
+
     </div>
   );
 };

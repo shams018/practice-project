@@ -25,53 +25,27 @@ const data = [
 
 const ThinBarChart = () => {
   return (
-    <div className="      w-full lg:w-[1188px]  lg:h-[240px] p-4">
-      
-      <ResponsiveContainer width="100%" height="100%">
-        <BarChart data={data} barGap={8}>
-          
-          <XAxis
-            dataKey="month"
-            axisLine={false}
-            tickLine={false}
-            tick={{ fontSize: 12 }}
-          />
+  <div className="w-full h-[200px] lg:h-[240px] p-4 bg-white rounded-lg">
+  <ResponsiveContainer width="100%" height="100%">
+    <BarChart data={data} barGap={8}>
+      <XAxis
+        dataKey="month"
+        axisLine={false}
+        tickLine={false}
+        tick={{ fontSize: 12 }}
+      />
 
+      {/* Red main line */}
+      <Bar dataKey="value" stackId="a" fill="#FF3B30" barSize={3} />
 
-          {/* Red main line */}
-<Bar 
-  dataKey="value"
-  stackId="a"
-  fill="#FF3B30"
-  barSize={3}
-/>
-         
+      {/* Gray middle small segment */}
+      <Bar dataKey="graySegment" stackId="a" fill="#BDBDBD" barSize={3} />
 
-
-{/* Gray middle small segment */}
-<Bar 
-  dataKey={(data) => data.top - data.value - 5}
-  stackId="a"
-  fill="#BDBDBD"
-  barSize={3}
-/>
-
-{/* Black top small cap */}
-<Bar 
-  dataKey={() => 5}
-  stackId="a"
-  fill="#000"
-  barSize={3}
-/>
-
-
-
-
-            
-        </BarChart>
-      </ResponsiveContainer>
-    </div>
-  );
-};
+      {/* Black top small cap */}
+      <Bar dataKey="blackCap" stackId="a" fill="#000" barSize={3} />
+    </BarChart>
+  </ResponsiveContainer>
+</div>
+  );};
 
 export default ThinBarChart;

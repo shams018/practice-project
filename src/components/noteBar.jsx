@@ -27,15 +27,20 @@ const noteBar = () => {
           </div>
 
 
-          <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
+          <div className="w-[248px] h-[52px] flex flex-row items-start mt-5 text-black text-sm gap-3 
+             rounded-md transition-all duration-200 transform
+             hover:bg-gray-100 hover:scale-105 cursor-pointer">
           <img src={notiIcon} alt="notification icon" className="ml-2 mt-1" />
           <div>
             <p>You fixed a bug.</p>
             <p className="text-xs text-gray-600">Just now</p>
           </div>
           </div>
+          
 
-          <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
+          <div className="w-[248px] h-[52px] flex flex-row items-start mt-5 text-black text-sm gap-3 
+             rounded-md transition-all duration-200 transform
+             hover:bg-gray-100 hover:scale-105 cursor-pointer">
           <img src={notiIcon1} alt="notification icon" className="ml-2 mt-1" />
           <div>
             <p>New user registered.</p>
@@ -43,7 +48,9 @@ const noteBar = () => {
           </div>
           </div>
 
-          <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
+          <div className="w-[248px] h-[52px] flex flex-row items-start mt-5 text-black text-sm gap-3 
+             rounded-md transition-all duration-200 transform
+             hover:bg-gray-100 hover:scale-105 cursor-pointer">
           <img src={notiIcon2} alt="notification icon" className="ml-2 mt-1" />
           <div>
             <p>You fixed a bug.</p>
@@ -51,7 +58,9 @@ const noteBar = () => {
           </div>
           </div>
 
-           <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
+           <div className="w-[248px] h-[52px] flex flex-row items-start mt-5 text-black text-sm gap-3 
+             rounded-md transition-all duration-200 transform
+             hover:bg-gray-100 hover:scale-105 cursor-pointer">
           <img src={notiIcon3} alt="notification icon" className="ml-2 mt-1" />
           <div>
             <p>Andi Lane subscribed to you</p>
@@ -72,7 +81,9 @@ const noteBar = () => {
           </div>
 
 
-          <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
+          <div className="w-[248px] h-[52px] flex flex-row items-start mt-5 text-black text-sm gap-3 p-2
+             rounded-md transition-all duration-200 transform
+             hover:bg-gray-100 hover:scale-105 cursor-pointer">
           <img src={actiIcon} alt="Activities icon" className="ml-2 mt-1" />
           <div>
             <p>Changed the style.</p>
@@ -80,7 +91,9 @@ const noteBar = () => {
           </div>
           </div>
 
-          <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
+          <div className="w-[248px] h-[52px] flex flex-row items-start mt-5 text-black text-sm gap-3 
+             rounded-md transition-all duration-200 transform
+             hover:bg-gray-100 hover:scale-105 cursor-pointer">
           <img src={actiIcon1} alt="Activities icon" className="ml-2 mt-1" />
           <div>
             <p>Released a new version.</p>
@@ -88,7 +101,9 @@ const noteBar = () => {
           </div>
           </div>
 
-          <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
+          <div className="w-[248px] h-[52px] flex flex-row items-start mt-5 text-black text-sm gap-3
+             rounded-md transition-all duration-200 transform
+             hover:bg-gray-100 hover:scale-105 cursor-pointer">
           <img src={actiIcon2} alt="Activities icon" className="ml-2 mt-1" />
           <div>
             <p>Submitted a bug.</p>
@@ -96,7 +111,9 @@ const noteBar = () => {
           </div>
           </div>
 
-           <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
+           <div className="w-[248px] h-[52px] flex flex-row items-start mt-5 text-black text-sm gap-3 
+             rounded-md transition-all duration-200 transform
+             hover:bg-gray-100 hover:scale-105 cursor-pointer">
           <img src={actiIcon3} alt="Activities icon" className="ml-2 mt-1" />
           <div>
             <p>Modified A data in Page X.</p>
@@ -104,7 +121,9 @@ const noteBar = () => {
           </div>
           </div>
 
-          <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
+          <div className="w-[248px] h-[52px] flex flex-row items-start mt-5 text-black text-sm gap-3 
+             rounded-md transition-all duration-200 transform
+             hover:bg-gray-100 hover:scale-105 cursor-pointer">
           <img src={actiIcon4} alt="Activities icon" className="ml-2 mt-1" />
           <div>
             <p>Deleted a page in Project X.</p>
@@ -121,7 +140,9 @@ const noteBar = () => {
           </div>
 
 
-          <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
+          <div className="w-[248px] h-[52px] flex flex-row items-start mt-5 text-black text-sm gap-3 
+             rounded-md transition-all duration-200 transform
+             hover:bg-gray-100 hover:scale-105 cursor-pointer">
           <img src={contactIcon} alt="contact icon" className="ml-2 " />
           <div>
             <p>Natali Craig</p>
@@ -129,7 +150,9 @@ const noteBar = () => {
           </div>
           </div>
 
-          <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
+          <div className="w-[248px] h-[52px] flex flex-row items-start mt-5 text-black text-sm gap-3
+             rounded-md transition-all duration-200 transform
+             hover:bg-gray-100 hover:scale-105 cursor-pointer">
           <img src={contactIcon1} alt="contact icon" className="ml-2 " />
           <div>
             <p>Drew Cano</p>
@@ -137,7 +160,9 @@ const noteBar = () => {
           </div>
           </div>
 
-          <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
+          <div className="w-[248px] h-[52px] flex flex-row items-start mt-5 text-black text-sm gap-3 
+             rounded-md transition-all duration-200 transform
+             hover:bg-gray-100 hover:scale-105 cursor-pointer">
           <img src={contactIcon2} alt="contact icon" className="ml-2 " />
           <div>
             <p>Andi Lane</p>
@@ -145,7 +170,9 @@ const noteBar = () => {
           </div>
           </div>
 
-           <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
+           <div className="w-[248px] h-[52px] flex flex-row items-start mt-5 text-black text-sm gap-3 
+             rounded-md transition-all duration-200 transform
+             hover:bg-gray-100 hover:scale-105 cursor-pointer">
           <img src={contactIcon3} alt="contact icon" className="ml-2 " />
           <div>
             <p>Koray Okumus</p>
@@ -153,7 +180,9 @@ const noteBar = () => {
           </div>
           </div>
 
-          <div className="w-[248px] h-[52px] flex flex-row items-start  mt-5  text-black text-sm  gap-3 ">
+          <div className="w-[248px] h-[52px] flex flex-row items-start mt-5 text-black text-sm gap-3 
+             rounded-md transition-all duration-200 transform
+             hover:bg-gray-100 hover:scale-105 cursor-pointer">
           <img src={contactIcon4} alt="contact icon" className="ml-2 " />
           <div>
             <p>Kate Morrison</p>
