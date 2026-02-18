@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import arrowIcon from "../assets/ArrowLineDown2.svg";
-import heroIcon from "../assets/HeroIcon.svg";
+import heroIcon from "../assets/heroIcon.svg";
 import AnalyticsChart from "../components/chatSection.jsx";
 import TrafficByDevice from "../components/barchat.jsx";
 import TrafficByLocation from "../components/taficByLocation.jsx";
