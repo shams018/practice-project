@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logoicon from "../assets/Icon.svg";
 import dashicon from "../assets/Icondash1.svg";
 import VectorIcon from "../assets/Vecto.svg";
@@ -186,7 +187,9 @@ const sideBar = () => {
             
               <div className="w-[180px] h-[36px] flex flex-row mt-80 ml-8   ">
                 <div className="w-[75px] h-[20px] flex items-center justify-center mt-3 - ">
-                    <button ><img src={snowUi} alt="plus icon" className="ml-2 w-[20px] h-[20px]" /></button>
+                    <Link to="/snow">
+                      <button aria-label="Open Snow page"><img src={snowUi} alt="plus icon" className="ml-2 w-[20px] h-[20px]" /></button>
+                    </Link>
               <img src={unionTxt} alt="dashboard icon" className="ml-3" />
               <img src={unionT} alt="dashboard icon" className="" />
 
