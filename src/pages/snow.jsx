@@ -41,22 +41,24 @@ const Snow = () => {
         <SnowSideBar closeSidebar={closeSidebar} darkMode={darkMode} />
       </div>
 
-      {/* Main Section */}
-      <div className="flex flex-col flex-1 min-w-0 w-full">
+     {/* Main Section */}
+<div className="flex flex-col flex-1 min-w-0 h-screen overflow-hidden">
 
-        {/* Navbar */}
-        <SnowNavBar
-          toggleSidebar={toggleSidebar}
-          toggleDarkMode={toggleDarkMode}
-          darkMode={darkMode}
-        />
+  {/* Navbar (Fixed) */}
+  <div className="sticky top-0 z-30 flex-shrink-0">
+    <SnowNavBar
+      toggleSidebar={toggleSidebar}
+      toggleDarkMode={toggleDarkMode}
+      darkMode={darkMode}
+    />
+  </div>
 
-        {/* Main Content */}
-        <div className="flex-1 overflow-y-auto scrollbar-hide px-2 sm:px-4 lg:px-6 xl:px-8">
-          <SnowMainContant darkMode={darkMode} />
-        </div>
+  {/* Main Content (Scrollable with hidden scrollbar) */}
+  <div className="flex-1 overflow-y-auto scrollbar-hide px-2 sm:px-4 lg:px-6 xl:px-8">
+    <SnowMainContant darkMode={darkMode} />
+  </div>
 
-      </div>
+</div>
 
     </div>
   );
