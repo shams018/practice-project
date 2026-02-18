@@ -76,8 +76,8 @@ const snowMainContant = () => {
       </div>
 
       <div className="pt-6"></div>
-      <div className=" w-full lg:w-[1188px]  h-auto lg:h-[360px] bg-white mx-4 mt-6 rounded-lg border-transparent border-2 ">
-        <div className=" w-full lg:w-[1140px]  h-auto lg:h-[40px] mx-4 my-4 flex items-center justify-between ">
+      <div className="w-full lg:w-[1188px] max-w-[1188px] h-auto lg:h-[360px] bg-white mx-auto px-2 sm:px-4 mt-6 rounded-lg border-transparent border-2">
+        <div className="w-full max-w-[1140px] h-auto lg:h-[40px] mx-auto px-2 sm:px-4 my-4 flex items-center justify-between">
           <div className="flex items-center justify-between gap-6 ">
             <button className="font-semibold text-[#AF52DE]">Users</button>
             <button> Projects</button>
@@ -104,9 +104,9 @@ const snowMainContant = () => {
         <SmoothLineChart />
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-4 mt-4 ml-4">
+      <div className="flex flex-col lg:flex-row gap-4 mt-4 ml-0 sm:ml-4 px-2 sm:px-0">
         <div className="w-full lg:w-[586px] h-auto lg:h-[272px] bg-white rounded-xl">
-          <div className="w-full lg:w-[538px] h-[40px] mx-4 my-4 flex items-center justify-between">
+          <div className="w-full max-w-[538px] h-[40px] mx-auto px-2 sm:px-4 my-4 flex items-center justify-between">
             <div className="flex items-center justify-between gap-6 ">
               <button className="font-semibold text-[#00C7BE]  hover:scale-110 active:scale-95 transition-all duration-100">
                 Device Traffic
@@ -123,7 +123,7 @@ const snowMainContant = () => {
         </div>
 
         <div className="w-full lg:w-[586px] h-auto lg:h-[272px] bg-white rounded-xl">
-          <div className="w-[538px] h-[40px] mx-4 my-4 flex items-center justify-between ">
+          <div className="w-full max-w-[538px] h-[40px] mx-auto px-2 sm:px-4 my-4 flex items-center justify-between">
             <div className="flex items-center justify-between gap-6 ">
               <button className="font-semibold text-[#34C759]  hover:scale-110 active:scale-95 transition-all duration-100">
                 Location Traffic
@@ -141,8 +141,8 @@ const snowMainContant = () => {
       </div>
 
       <div className="pt-6"></div>
-      <div className=" w-full lg:w-[1188px] h-auto lg:h-[344px] bg-white mx-4 mt-6 rounded-lg border-transparent border-2 ">
-        <div className=" w-full lg:w-[1140px] h-auto lg:h-[40px] mx-4 my-4 flex items-center justify-between ">
+      <div className="w-full lg:w-[1188px] max-w-[1188px] h-auto lg:h-[344px] bg-white mx-auto px-2 sm:px-4 mt-6 rounded-lg border-transparent border-2">
+        <div className="w-full max-w-[1140px] h-auto lg:h-[40px] mx-auto px-2 sm:px-4 my-4 flex items-center justify-between">
           <div className="flex items-center justify-between gap-6 ">
             <button className="font-semibold text-[#FF3B30] hover:scale-110 active:scale-95 transition-all duration-100">
               Product Traffic
@@ -172,8 +172,8 @@ const snowMainContant = () => {
       </div>
 
       <div className="pt-6"></div>
-      <div className=" w-full lg:w-[1188px] h-auto lg:h-[424px] bg-white mx-4 mt-6 rounded-lg border-transparent border-2 ">
-        <div className=" w-full lg:w-[1140px] h-auto lg:h-[40px] mx-4 mt-4 flex items-center justify-between ">
+      <div className="w-full lg:w-[1188px] max-w-[1188px] h-auto lg:h-[424px] bg-white mx-auto px-2 sm:px-4 mt-6 rounded-lg border-transparent border-2">
+        <div className="w-full max-w-[1140px] h-auto lg:h-[40px] mx-auto px-2 sm:px-4 mt-4 flex items-center justify-between">
           <div className="flex items-center justify-between gap-6 ">
             <button className="font-semibold text-[#00C7BE]  hover:scale-110 active:scale-95 transition-all duration-100">Projects</button>
           </div>
@@ -184,8 +184,8 @@ const snowMainContant = () => {
             </button>
           </div>
         </div>
-        <div className="  w-full lg:w-[1140px] h-auto lg:h-[320px] mx-4  flex items-center justify-center grid grid-cols-4 ">
-          <div className="w-[336.33px] h-[320px] p-4  flex flex-col ">
+        <div className="w-full max-w-[1140px] h-auto lg:h-[320px] mx-auto px-2 sm:px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-start">
+          <div className="w-full h-[320px] p-4 flex flex-col">
             <p className="text-sm text-[#00000066] ml-2 mb-5">Manager</p>
 
             <div className="flex flex-col gap-1">
@@ -216,8 +216,8 @@ const snowMainContant = () => {
             </div>
           </div>
 
-          <div className="w-[336.33px] h-[320px] p-4  flex flex-col ml-15">
-            <p className="text-sm text-[#00000066] mb-5 ">Date</p>
+          <div className="w-full h-[320px] p-4 flex flex-col">
+            <p className="text-sm text-[#00000066] mb-5">Date</p>
 
             <div className="flex flex-col gap-1 ">
               <div className="flex items-center gap-3 h-[52px]">
@@ -242,8 +242,8 @@ const snowMainContant = () => {
             </div>
           </div>
 
-          <div className=" w-full lg:w-[336.33px] h-auto lg:h-[320px] p-4  flex flex-col ml-20">
-            <p className="text-sm text-[#00000066] mb-4 ">Amount</p>
+          <div className="w-full h-[320px] p-4 flex flex-col">
+            <p className="text-sm text-[#00000066] mb-4">Amount</p>
 
             <div className="flex flex-col gap-1 ">
               <div className="flex items-center gap-3 h-[52px]">
@@ -310,8 +310,8 @@ const snowMainContant = () => {
         </div>
       
 
-     <div className="w-full max-w-[1188px] h-[56px] mx-4 mt-6 border-transparent border-2">
-  <div className="w-full max-w-[1140px] h-[40px] mx-4 my-4 flex items-center justify-between">
+      <div className="w-full max-w-[1188px] h-[56px] mx-auto px-2 sm:px-4 mt-6 border-transparent border-2">
+    <div className="w-full max-w-[1140px] h-[40px] mx-auto px-2 sm:px-4 my-4 flex items-center justify-between">
     
     {/* Left side */}
     <div className="flex items-center">

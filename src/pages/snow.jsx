@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SnowNavBar from "../components/snowNavBar.jsx";
 import SnowSideBar from "../components/snowSideBar.jsx";
 import SnowMainContant from "../components/snowMainContant.jsx";
@@ -11,6 +11,14 @@ const Snow = () => {
   const closeSidebar = () => setSidebarOpen(false);
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
+  useEffect(() => {
+    // Prevent background scrolling when sidebar is open on mobile
+    document.body.style.overflow = sidebarOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [sidebarOpen]);
+
   return (
     <div
       className={`flex min-h-screen w-full transition-colors duration-300 ${
@@ -18,10 +26,10 @@ const Snow = () => {
       }`}
     >
       
-      {/* Overlay */}
+      {/* Overlay (darkened on mobile) */}
       <div
         className={`
-          fixed inset-0 bg-black/40 z-30 md:hidden transition-opacity duration-300
+          fixed inset-0 bg-black/80 z-30 md:hidden transition-opacity duration-300
           ${sidebarOpen ? "opacity-100" : "opacity-0 pointer-events-none"}
         `}
         onClick={closeSidebar}
@@ -31,9 +39,9 @@ const Snow = () => {
       <div
         className={`
           fixed z-40 top-0 left-0 h-full
-          w-[200px] sm:w-[220px] lg:w-[240px] xl:w-[260px]
-          transition-transform duration-300
-          ${darkMode ? "bg-[#020817]" : ""}
+          w-full sm:w-[220px] lg:w-[240px] xl:w-[260px]
+          transition-transform duration-300 ease-in-out
+          ${darkMode ? "bg-[#020817] md:bg-transparent" : "bg-white md:bg-transparent"}
           md:static md:translate-x-0
           ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}
         `}

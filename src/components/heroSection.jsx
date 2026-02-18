@@ -12,7 +12,7 @@ const heroSection = () => {
     console.log("Dropdown toggled:", !dropdownOpen);
   };
   return (
-    <div className=" w-[948px] h-auto">
+    <div className="w-[948px] h-auto mx-auto">
       <div className="flex items-center justify-between">
         <h1 className="text-black font-semibold ml-8">Overview</h1>
         <div className="items-center justify-center flex gap-2  mr-8">
